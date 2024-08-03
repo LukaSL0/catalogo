@@ -1,0 +1,119 @@
+.catalogo {
+    margin: 60px 0;
+    @include responsive(900px) {
+        margin: 30px 0;
+    }
+
+    &__regiao {
+        display: flex;
+        @include responsive(900px) {
+            display: block;
+        }
+
+        &__img {
+            width: 60%;
+            @include responsive(900px) {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+                height: 900px;
+                object-fit: cover;
+                @include responsive(900px) {
+                    object-fit: contain;
+                    height: auto;
+                }
+            }
+        }
+
+        &__textos {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            padding: 50px;
+            text-align: center;
+            justify-content: center;
+            @include responsive(900px) {
+                width: 100%;
+            }
+
+            h1 {
+                @include fontSize(30px, 48px, 345px, 1920px);
+            }
+
+            span {
+                @include fontSize(15px, 18px, 345px, 1920px);
+                margin: 25px 0;
+                letter-spacing: 0.5px;
+                font-weight: bold;
+
+                svg {
+                    margin-bottom: -8px;
+                    margin-right: 7px;
+                    width: 25px;
+                }
+            }
+
+            p {
+                @include fontSize(15px, 17.5px, 345px, 1920px);
+                color: #505050;
+                line-height: 25px;
+            }
+        }
+    }
+
+    &__vinhos {
+        margin: 10px 0;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 300px);
+        row-gap: 60px;
+        align-items: center;
+        justify-content: center;
+
+        &__card {
+            transition: all 2s;
+
+            a {
+                padding: 15px 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                color: #333;
+                text-align: center;
+                font-size: 17px;
+                height: 400px;
+
+                &:hover {
+                    background-color: #dddddd;
+                }
+
+                img {
+                    height: 300px;
+                    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+                }
+
+                &:hover img {
+                    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    transform: scale(1.05);
+                }
+
+                p {
+                    font-weight: bold;
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+    }
+}
+
+.semresultado {
+    text-align: center;
+    font-weight: lighter;
+    letter-spacing: 0.4px;
+    margin: 0 40px;
+    @include fontSize(22px, 32px, 345px, 1920px);
+}

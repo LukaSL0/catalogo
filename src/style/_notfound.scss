@@ -1,0 +1,39 @@
+.notfound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $branco;
+  width: 100%;
+  height: 100vh;
+
+  h1 {
+    letter-spacing: 7px;
+    color: $preto;
+    @include fontSize(50px, 120px, 345px, 1920px);
+  }
+
+  p {
+    color: $preto;
+    @include fontSize(13px, 26px, 345px, 1920px);
+  }
+      
+  a {
+    color: $preto;
+    letter-spacing: 1.5px;
+    border: 1px solid $preto;
+    padding: 8px 22px;
+    border-radius: 12px;
+    outline: none;
+    background-color: transparent;
+    transition: all 0.4s;
+    margin-top: 16px;
+    @include fontSize(11px, 17px, 345px, 1920px);
+        
+    &:hover {
+      background-color: rgba($preto, 0.78);
+      border: 1px solid transparent;
+      color: $branco;
+    }
+  }
+}

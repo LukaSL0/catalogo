@@ -1,0 +1,85 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("../../public/assets/footer.webp") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    @include responsive(900px) {
+        height: 650px;
+    }
+
+    img {
+        width: 450px;
+        @include responsive(900px) {
+            width: 340px;
+        }
+    }
+
+    .redes {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.475);
+        border-radius: 14px;
+        padding: 10px 15px;
+        margin-top: 20px;
+        @include responsive(900px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        a {
+            color: white;
+            font-size: 17px;
+            transition: all 0.5s;
+            letter-spacing: 0.5px;
+            @include responsive(900px) {
+                width: 100%;
+                text-align: center;
+                padding: 10px 15px;
+            }
+
+            &.redes__instagram {
+
+                i {
+                    color: rgb(204, 155, 164);
+                }
+            }
+
+            &.redes__whatsapp {
+                margin: 0 15px;
+
+                i {
+                    color: rgb(149, 221, 41);
+                }
+            }
+
+            &.redes__email {
+                margin-right: 15px;
+
+                i {
+                    color: rgb(255, 87, 87);
+                }
+            }
+
+            &.redes__facebook {
+
+                i {
+                    color: rgb(96, 96, 219);
+                }
+            }
+
+            &:hover {
+                color: #dadada;
+                transition: all 0.5s;
+            }
+
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+}

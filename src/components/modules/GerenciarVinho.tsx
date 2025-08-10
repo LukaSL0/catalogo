@@ -1,27 +1,7 @@
 import React, { useState, useEffect, useRef, ChangeEvent } from "react";
 import Api from "../../Api";
 import { useData } from "../../contexts/DataContext";
-
-type Vinho = {
-    id: number;
-    slug: string;
-    imagem: string;
-    nome: string;
-    descricao: string;
-    tipo: string;
-    produtor: string;
-    pais: string;
-    regiao: string;
-    uva: string;
-    cor: string;
-    perfume: string;
-    paladar: string;
-    harmonizacao: string;
-    temperatura: string;
-    alcool: string;
-    cliente: string;
-    visivel?: boolean;
-};
+import { Vinho } from "../Types";
 
 type VinhoProps = {
     isOpen: boolean;

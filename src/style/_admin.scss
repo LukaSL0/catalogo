@@ -1,3 +1,5 @@
+@use 'globals' as *;
+
 .admin {
     padding: 3%;
     @include responsive(900px) {

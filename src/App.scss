@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Urbanist');
+@use 'style/style';
 
 * {
   margin: 0;
@@ -41,9 +41,3 @@ input::-webkit-inner-spin-button {
 *:focus {
   outline: none;
 }
-
-/*---------------------------------------*/
-
-@import 'style/style';
-
-/*---------------------------------------*/

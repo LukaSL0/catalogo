@@ -49,7 +49,7 @@ export default function Header({ onSearch, onSelectChange }: HeaderProps) {
             <header className="header-home">
                 <nav className={isFixed ? 'fixed' : ''}>
                     <a href="/"><img src="/assets/logo-branca.webp" alt="Logo" /></a>
-                    <div className="select">
+                    {/* <div className="select">
                         <select
                             value={pais}
                             onChange={(e) => {
@@ -61,7 +61,7 @@ export default function Header({ onSearch, onSelectChange }: HeaderProps) {
                             <option value="Itália">Italianos</option>
                             <option value="França">Franceses</option>
                         </select>
-                    </div>
+                    </div> */}
                     <input
                         type="text"
                         placeholder={windowWidth < 550 ? "🔎︎" : "🔎︎ O que busca?"}

@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import Login from './components/Login';
 import Api from "./Api";
 
-const ProtectedRoute = (): JSX.Element => {
+const ProtectedRoute = () => {
   const [isAuth, setIsAuth] = useState<boolean>(false);
 
   useEffect(() => {
